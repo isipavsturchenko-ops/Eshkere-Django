@@ -1,0 +1,49 @@
+
+{% extends 'main/base.html' %}
+
+{% block title %}Афиша — ЭЩКЕРЕ{% endblock %}
+
+{% block content %}
+<section class="page">
+    <span class="eyebrow">НА СЦЕНЕ</span>
+    <h1>НАША <em>АФИША.</em></h1>
+
+    <p>
+        Истории, которые остаются с вами
+        даже после финального занавеса.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <span class="card-number">01 / ТРАГЕДИЯ</span>
+            <h3>ГАМЛЕТ</h3>
+            <p>
+                Бессмертная история Уильяма Шекспира
+                о выборе, предательстве и судьбе.
+            </p>
+        </div>
+
+        <div class="card">
+            <span class="card-number">02 / КОМЕДИЯ</span>
+            <h3>РЕВИЗОР</h3>
+            <p>
+                Острая сатирическая комедия
+                Николая Гоголя.
+            </p>
+        </div>
+
+        <div class="card">
+            <span class="card-number">03 / ДРАМА</span>
+            <h3>ВИШНЁВЫЙ САД</h3>
+            <p>
+                Тонкая история Антона Чехова
+                о прошлом и неизбежности перемен.
+            </p>
+        </div>
+    </div>
+
+    <a href="{% url 'main:tickets' %}" class="button">
+        Информация о билетах ↗
+    </a>
+</section>
+{% endblock %}

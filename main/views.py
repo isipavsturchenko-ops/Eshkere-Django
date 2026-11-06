@@ -1,0 +1,26 @@
+
+from django.shortcuts import render
+
+
+def home(request):
+    return render(request, 'main/home.html')
+
+
+def about(request):
+    return render(request, 'main/about.html')
+
+
+def contacts(request):
+    return render(request, 'main/contacts.html')
+
+
+def location(request):
+    return render(request, 'main/location.html')
+
+
+def performances(request):
+    return render(request, 'main/performances.html')
+
+
+def tickets(request):
+    return render(request, 'main/tickets.html')

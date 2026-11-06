@@ -1,0 +1,37 @@
+
+{% extends 'main/base.html' %}
+
+{% block title %}Главная — ЭЩКЕРЕ{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <span class="eyebrow">СОВРЕМЕННЫЙ ТЕАТР</span>
+        <h1>ИСКУССТВО<br><em>ВНЕ ОЖИДАНИЙ.</em></h1>
+        <p>
+            ЭЩКЕРЕ — театр, где классика встречается
+            с современностью, а каждая постановка
+            становится новым переживанием.
+        </p>
+        <div class="actions">
+            <a href="{% url 'main:performances' %}" class="button">
+                Смотреть афишу ↗
+            </a>
+            <a href="{% url 'main:about' %}" class="button-outline">
+                Узнать о театре
+            </a>
+        </div>
+    </div>
+    <div class="hero-decoration">Э</div>
+</section>
+
+<section class="intro">
+    <span class="eyebrow">НАША ФИЛОСОФИЯ</span>
+    <h2>Театр, который<br>оставляет след.</h2>
+    <p>
+        Мы верим, что искусство должно удивлять,
+        вдохновлять и заставлять чувствовать.
+        Добро пожаловать в мир ЭЩКЕРЕ.
+    </p>
+</section>
+{% endblock %}

@@ -1,0 +1,34 @@
+
+{% extends 'main/base.html' %}
+
+{% block title %}Билеты — ЭЩКЕРЕ{% endblock %}
+
+{% block content %}
+<section class="page">
+    <span class="eyebrow">ВАШ ВЕЧЕР НАЧИНАЕТСЯ ЗДЕСЬ</span>
+    <h1>БИЛЕТЫ<span class="gold">.</span></h1>
+
+    <p>
+        Откройте для себя мир театра ЭЩКЕРЕ.
+        Выберите интересующий спектакль и
+        ознакомьтесь с информацией о билетах.
+    </p>
+
+    <div class="card">
+        <span class="card-number">ИНФОРМАЦИЯ</span>
+        <h3>Бронирование билетов</h3>
+        <p>
+            На текущем этапе система демонстрирует
+            маршрутизацию веб-приложения.
+            Функция онлайн-продажи билетов
+            будет реализована в дальнейшем.
+        </p>
+    </div>
+
+    <div class="actions">
+        <a href="{% url 'main:performances' %}" class="button">
+            Смотреть афишу ↗
+        </a>
+    </div>
+</section>
+{% endblock %}
